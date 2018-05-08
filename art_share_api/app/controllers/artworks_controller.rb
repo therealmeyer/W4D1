@@ -3,7 +3,7 @@ class ArtworksController < ApplicationController
     artworks = Artwork.where(artist_id: params[:user_id])
     current_user = User.find(params[:user_id])
     shared_artworks = current_user.shared_artworks
-    render json: {artworks: artworks, shared_artworks: shared_artworks }
+    render json: {artworks: artworks, shared_artworks: shared_artworks}
   end
 
   def show

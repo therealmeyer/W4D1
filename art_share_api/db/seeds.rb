@@ -28,3 +28,9 @@ ArtworkShare.create(artwork_id: hydro.id, viewer_id: ryan.id)
 ArtworkShare.create(artwork_id: apple.id, viewer_id: ed.id)
 ArtworkShare.create(artwork_id: star.id, viewer_id: ed.id)
 ArtworkShare.create(artwork_id: star.id, viewer_id: nick.id)
+
+
+Comment.create(user_id: ed.id, artwork_id: ml.id, body: "COPY CAT!!!!")
+Comment.create(user_id: ed.id, artwork_id: hydro.id, body: "best art!!!!")
+Comment.create(user_id: ryan.id, artwork_id: ml.id, body: "i can't believe people don't lik this")
+Comment.create(user_id: nick.id, artwork_id: apple.id, body: "i like pears better")
